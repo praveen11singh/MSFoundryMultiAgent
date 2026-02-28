@@ -1,13 +1,8 @@
-# pylint: disable=line-too-long,useless-suppression
-# ------------------------------------
-# Copyright (c) Microsoft Corporation.
-# Licensed under the MIT License.
-# ------------------------------------
-
-import json
-import datetime
 from typing import Any, Callable, Set, Optional
 from opentelemetry import trace
+import json
+import datetime
+
 
 
 tracer = trace.get_tracer(__name__)
