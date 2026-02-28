@@ -1,15 +1,12 @@
-# ------------------------------------
-# Copyright (c) Microsoft Corporation.
-# Licensed under the MIT License.
-# ------------------------------------
+from opentelemetry.sdk.trace.export import SimpleSpanProcessor, ConsoleSpanExporter
+from azure.ai.agents import AgentsClient
+from azure.monitor.opentelemetry import configure_azure_monitor
 import os
 import sys
 from typing import cast
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider
-from opentelemetry.sdk.trace.export import SimpleSpanProcessor, ConsoleSpanExporter
-from azure.ai.agents import AgentsClient
-from azure.monitor.opentelemetry import configure_azure_monitor
+
 
 
 class AgentTraceConfigurator:
